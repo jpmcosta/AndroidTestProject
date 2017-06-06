@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        text1TextView.text =
-                Settings.Secure.getString(applicationContext.contentResolver, "enabled_notification_listeners")
+        text1TextView.text = Settings.Secure.getString(contentResolver, "enabled_notification_listeners")
     }
 }
