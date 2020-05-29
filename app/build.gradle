@@ -43,8 +43,6 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$ANDROIDX_APPCOMPAT_VERSION"
     implementation "androidx.recyclerview:recyclerview:$ANDROIDX_RECYCLERVIEW_VERSION"
     implementation "com.google.android.material:material:$ANDROIDX_MATERIAL_VERSION"
-    implementation "androidx.work:work-runtime:$ANDROIDX_WORK"
-    implementation "androidx.work:work-runtime-ktx:$ANDROIDX_WORK"
 
     // Butter Knife.
     implementation "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
