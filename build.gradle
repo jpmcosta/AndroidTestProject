@@ -6,7 +6,6 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$ANDROID_GRADLE_PLUGIN_VERSION"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$KOTLIN_VERSION"
-        classpath "com.jakewharton:butterknife-gradle-plugin:$BUTTERKNIFE_VERSION"
     }
 }
 

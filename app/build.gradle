@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION as int
@@ -36,18 +35,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN_VERSION"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$KOTLIN_COROUTINES_VERSION"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$KOTLIN_COROUTINES_VERSION"
 
     // AndroidX.
     implementation "androidx.appcompat:appcompat:$ANDROIDX_APPCOMPAT_VERSION"
-    implementation "androidx.recyclerview:recyclerview:$ANDROIDX_RECYCLERVIEW_VERSION"
-    implementation "com.google.android.material:material:$ANDROIDX_MATERIAL_VERSION"
-
-    // Butter Knife.
-    implementation "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
-    kapt "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
-
 
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
