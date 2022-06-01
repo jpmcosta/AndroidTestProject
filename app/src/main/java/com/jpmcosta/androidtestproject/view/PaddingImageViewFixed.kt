@@ -12,7 +12,7 @@ class PaddingImageViewFixed : PaddingImageView {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
             super(context, attrs, defStyleAttr)
 
-    private var hasFrame: Boolean = true
+    private var hasFrame: Boolean = false
 
     override fun setFrame(l: Int, t: Int, r: Int, b: Int): Boolean {
         hasFrame = true
