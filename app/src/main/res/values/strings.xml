@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidTestProject</string>
+    <string name="issue">Issue</string>
+    <string name="fixed">Fixed</string>
 </resources>
